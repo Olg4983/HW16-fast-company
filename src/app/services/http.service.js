@@ -5,7 +5,7 @@ import { httpAuth } from "../hooks/useAuth";
 import localStorageService from "./localStorage.service";
 
 const http = axios.create({
-    baseURL: configFile.apiEndpoint
+    baseURL: configFile.apiEndPoint
 });
 
 http.interceptors.request.use(
